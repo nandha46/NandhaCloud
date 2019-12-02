@@ -28,7 +28,7 @@ public class RemoveDupUrl {
 		}
 		allurl.removeAll(secondurls);
 	reader.close();
-	reader2.close();
+	reader2.close(); 
 	writer.write(allurl.toString().replaceAll(", ","\n").replaceAll("\\[","").replaceAll("\\]",""));
 	writer.close();
 	}
