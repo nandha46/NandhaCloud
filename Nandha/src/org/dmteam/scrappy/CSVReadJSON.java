@@ -12,7 +12,7 @@ import org.json.simple.parser.JSONParser;
  * @author Nandhakumar Subramanian
  *
  */
-public class CSVReadNew {
+public class CSVReadJSON {
 
 	private static final String SPLIT_REGEX = ",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))";
 	
