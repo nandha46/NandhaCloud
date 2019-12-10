@@ -56,7 +56,7 @@ public class CSVReadJSON {
 		    revenueDynamic = (String) jo.get("REVENUES");
 		    revenueSymbol = (String) jo.get("REVENUE_SYMBOL");
 		    String sid = lineArray[0];
-		    String orgname = lineArray[1];
+		    String orgname = lineArray[1]; 
 		    String website = lineArray[2];
 		    String revenue= lineArray[3];
 		    System.out.println("SID: "+sid+"\nOrg name: "+orgname+"\nWebsite: "+website+"\nRevenue: "+revenue+"\nRevenueSymbol :"+revenueSymbol+"\nRevenueDynamic: "+revenueDynamic+"\n");
