@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" jdk="1.8" jdk_type="JavaSDK">
+	<output-test url="file://$MODULE_DIR$/../out/test/Nandha"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="json-simple-1.1.jar" scope="COMPILE">
+		<srcroot url="file://$USER_HOME$/Documents/JAVA/json_simple-1.1-all"/>
+	</lib>
+</component>
