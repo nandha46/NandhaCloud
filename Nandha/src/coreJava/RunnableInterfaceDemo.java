@@ -1,6 +1,4 @@
 package coreJava;
-
-import java.util.logging.Level;
 class RunnableWorker implements Runnable{
 
 	@Override
