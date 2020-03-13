@@ -4,6 +4,13 @@
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
 	<lib name="json-simple-1.1.jar" scope="COMPILE">
-		<srcroot url="file://$USER_HOME$/Documents/JAVA/json_simple-1.1-all"/>
+		<srcroot url="file:///home/local/ZOHOCORP/nandha-con426/Documents/JAVA/json_simple-1.1-all"/>
 	</lib>
+	<levels>
+		<level name="postgresql-42.2.8" value="project"/>
+		<level name="src" value="project"/>
+		<level name="postgresql-42.2.5" value="project"/>
+		<level name="jsoup-1.12.1" value="project"/>
+		<level name="json-20190722" value="project"/>
+	</levels>
 </component>
