@@ -6,6 +6,18 @@
 	<classpathentry kind="lib" path="/personal/JAVA/postgresql-42.2.8.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/postgresql-42.2.8"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/src"/>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	<classpathentry kind="lib" path="/opt/Spring/spring-framework-5.2.3.RELEASE"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/postgresql-42.2.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsoup-1.12.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/json-20190722"/>
+>>>>>>> Stashed changes
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/postgresql-42.2.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsoup-1.12.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/json-20190722"/>
+>>>>>>> Stashed changes
 	<classpathentry kind="output" path="bin"/>
 </classpath>
