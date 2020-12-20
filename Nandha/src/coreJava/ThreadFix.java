@@ -26,7 +26,7 @@ public class ThreadFix extends Thread{
             }
         }  
     }
-    // let’s see how to start the threads
+    // let's see how to start the threads
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName() + " is executing..." );
         ThreadFix counter = new ThreadFix();
