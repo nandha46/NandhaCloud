@@ -8,7 +8,7 @@ public class FileSize {
 			System.out.println(size*1024+"B");
 		} else if(size/1024<1){
 			System.out.println(size+"KB");
-s		} else if(size/1024<1) {
+		} else if(size/1024<1) {
 			System.out.println(size+"MB");
 		} else {
 			System.out.println(size+"GB");
