@@ -1,4 +1,4 @@
-package coreJava;
+package MultiThreading;
 
 public class RunnableTest implements Runnable{
 	@Override

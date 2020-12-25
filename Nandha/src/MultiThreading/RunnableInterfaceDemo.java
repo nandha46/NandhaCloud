@@ -1,4 +1,4 @@
-package coreJava;
+package MultiThreading;
 class RunnableWorker implements Runnable{
 
 	@Override

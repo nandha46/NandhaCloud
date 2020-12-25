@@ -1,7 +1,7 @@
 /**
  * 
  */
-package coreJava;
+package MultiThreading;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,12 +9,14 @@ import java.util.concurrent.TimeUnit;
  * @author nandha-con426
  *
  */
-public class ThreadFix extends Thread{
-	Integer count = 0;
-	 
+public class ThreadSafety extends Thread {
+
+    //instance variable
+    Integer count = 0;
+
     // method where the thread execution will start
     public void run() {
-        int fixed = 6;
+        int fixed = 6;  //local variable
         
         for (int i = 0; i < 3; i++) {
             System.out.println(Thread.currentThread().getName() + ": result=" 
@@ -26,10 +28,11 @@ public class ThreadFix extends Thread{
             }
         }  
     }
-    // let's see how to start the threads
+
+    // let’s see how to start the threads
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName() + " is executing..." );
-        ThreadFix counter = new ThreadFix();
+        ThreadSafety counter = new ThreadSafety();
         
         //5 threads
         for (int i = 0; i < 5; i++) {
@@ -39,7 +42,8 @@ public class ThreadFix extends Thread{
         
     }
     
-    private synchronized int performCount(int fixed) {
+    //multiple threads can access me concurrently
+    private int performCount(int fixed) {
         return (fixed + ++count);
     }
 }

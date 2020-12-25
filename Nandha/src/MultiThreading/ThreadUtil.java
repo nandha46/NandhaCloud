@@ -1,4 +1,4 @@
-package coreJava;
+package MultiThreading;
 /**
  * @author Nandha
  * @since 1.5
