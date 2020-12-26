@@ -1,4 +1,4 @@
-package coreJava;
+package database;
 
 import java.util.Scanner;
 
