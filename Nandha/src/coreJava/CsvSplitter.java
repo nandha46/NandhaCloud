@@ -18,9 +18,6 @@ public class CsvSplitter {
 		PrintWriter writer = new PrintWriter("/home/local/ZOHOCORP/nandha-con426/Documents/Investing URL/urls/page_"+j+".html");
 		while((line =reader.readLine())!= null) {
 			i++; 
-		//	System.out.println("Current line:" +i );
-		//	System.out.println("\tCuurent file:" +j );
-		//	writer.println(line.concat("\">"+i+"</a>").replaceFirst("companyo","<a href=\"http://companyo"));
 			writer.println(line);
 			if (i==498) {
 				j++; i=0;
