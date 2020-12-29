@@ -1,5 +1,9 @@
 package coreJava;
-
+/**
+ * 
+ * @author Nandhakumar Subramanian
+ *
+ */
 public class LinkedList {
 	Node head;
 
