@@ -1,7 +1,7 @@
 /**
  * 
  */
-package coreJava;
+package file;
 
 import java.io.File;
 import java.io.IOException;
