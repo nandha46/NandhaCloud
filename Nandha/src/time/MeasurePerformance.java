@@ -2,9 +2,14 @@ package time;
 
 import java.time.Duration;
 import java.time.Instant;
-
+/**
+ * 
+ * @author Nandha
+ *
+ */
 public class MeasurePerformance {
-
+	// TODO make this class universal & slice into any file to measure performance
+	// TODO Logger into all java codes
 	private void someMethod() {
 		// Some random sleeps and waits..
 		System.out.println("sleeping...");
