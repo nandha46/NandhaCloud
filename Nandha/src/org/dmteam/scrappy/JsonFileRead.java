@@ -2,7 +2,6 @@ package org.dmteam.scrappy;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import org.json.simple.JSONObject;
