@@ -1,7 +1,11 @@
 package coreJava;
 
-import java.util.Arrays;
-
+/**
+ * 
+ * @author Nandhakumar Subramanian
+ * @since 1.8
+ *
+ */
 public class WealthCalc {
 
 	    public int maximumWealth(int[][] accounts) {

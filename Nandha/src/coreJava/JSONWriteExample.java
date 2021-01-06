@@ -11,6 +11,7 @@ import org.json.simple.JSONObject;
 
 public class JSONWriteExample 
 { 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws FileNotFoundException 
 	{ 
 		// creating JSONObject 
@@ -22,7 +23,7 @@ public class JSONWriteExample
 		jo.put("age", 25); 
 		
 		// for address data, first create LinkedHashMap 
-		Map m = new LinkedHashMap(4); 
+		Map<String, Comparable> m = new LinkedHashMap<String, Comparable>(4); 
 		m.put("streetAddress", "21 2nd Street"); 
 		m.put("city", "New York"); 
 		m.put("state", "NY"); 
@@ -33,15 +34,13 @@ public class JSONWriteExample
 		
 		// for phone numbers, first create JSONArray 
 		JSONArray ja = new JSONArray(); 
-		
-		m = new LinkedHashMap(2); 
+		m = new LinkedHashMap<String, Comparable>(2); 
 		m.put("type", "home"); 
 		m.put("number", "212 555-1234"); 
 		
 		// adding map to list 
 		ja.add(m); 
-		
-		m = new LinkedHashMap(2); 
+		m = new LinkedHashMap<String, Comparable>(2); 
 		m.put("type", "fax"); 
 		m.put("number", "212 555-1234"); 
 		

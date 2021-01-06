@@ -1,6 +1,5 @@
 package org.dmteam.scrappy;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 /**
@@ -19,8 +18,8 @@ public class HomeGenerator {
 					print.close();
 					print= new PrintWriter("/home/local/ZOHOCORP/nandha-con426/Documents/Gen/home_"+j+".html");
 				}
+				print.close();
 			}
-			print.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

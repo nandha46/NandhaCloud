@@ -4,6 +4,7 @@ package coreJava;
 import java.io.FileReader;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -29,23 +30,23 @@ public class JsonRead
 		System.out.println(age);
 
 
-		Map address = ((Map)jo.get("address"));
+		Map<?, ?> address = ((Map<?, ?>)jo.get("address"));
 
-		Iterator<Map.Entry> itr1 = address.entrySet().iterator();
+		Iterator<?> itr1 = address.entrySet().iterator();
 		while (itr1.hasNext()) {
-			Map.Entry pair = itr1.next();
+			Map.Entry<?,?> pair = (Entry<?,?>)itr1.next();
 			System.out.println(pair.getKey() + " : " + pair.getValue());
 		}
 
 		JSONArray ja = (JSONArray) jo.get("phoneNumbers");
 
-		Iterator itr2 = ja.iterator();
+		Iterator<?> itr2 = ja.iterator();
 
 		while (itr2.hasNext())
 		{
-			itr1 = ((Map) itr2.next()).entrySet().iterator();
+			itr1 = ((Map<?, ?>) itr2.next()).entrySet().iterator();
 			while (itr1.hasNext()) {
-				Map.Entry pair = itr1.next();
+				Map.Entry<?,?> pair = (Entry<?, ?>) itr1.next();
 				System.out.println(pair.getKey() + " : " + pair.getValue());
 			}
 		}
