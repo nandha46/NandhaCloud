@@ -1,6 +1,6 @@
 package MultiThreading;
 /**
- * @author nandha-con426
+ * @author Nandhakumar Subramanian
  *
  */
 public class RunnableAlt implements Runnable {
