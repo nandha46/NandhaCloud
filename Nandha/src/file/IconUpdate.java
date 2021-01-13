@@ -11,6 +11,7 @@ import java.util.Scanner;
  *
  */
 public class IconUpdate {
+	private static final String CLASS_NAME = IconUpdate.class.getName();
 	private static final String start = "METHOD_START";
 	private static final String end = "METHOD END";
 	private static final FilenameFilter filter = (dir, name) -> !name.contains(".");
