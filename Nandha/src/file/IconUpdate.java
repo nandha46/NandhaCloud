@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FilenameFilter;
 import java.util.Scanner;
+import java.util.logging.Level;
 
+import util.Loggr;
 /**
  * 
  * @author Nandhakumar Subramanian
@@ -12,13 +14,12 @@ import java.util.Scanner;
  */
 public class IconUpdate {
 	private static final String CLASS_NAME = IconUpdate.class.getName();
-	private static final String start = "METHOD_START";
-	private static final String end = "METHOD END";
 	private static final FilenameFilter filter = (dir, name) -> !name.contains(".");
 	private static final FilenameFilter iniFilter = (dir, name) -> name.matches("desktop.ini");
 	
 	private static void listFolder(File file) {
-		System.out.println(start+"\n");
+		final String methodName = "listFolder"; 
+		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
 		Scanner scanner;
 		if (file.isDirectory()) {
 			File[] folders = file.listFiles(filter);
@@ -47,7 +48,7 @@ public class IconUpdate {
 		else {
 			System.out.println("Invalid Path");
 		}
-		System.out.println("\n"+end);
+		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 	}
 
 	public static void main(String[] args) {
