@@ -3,6 +3,7 @@ package util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Date;
 import java.util.logging.Level;
 
 /**
@@ -25,6 +26,7 @@ public class Loggr {
 	private static final String CLASS_NAME = Loggr.class.getName();
 	private static FileWriter fileWriter;
 	private static File file;
+	private static Date date;
 
 	private Loggr() {
 		
@@ -58,6 +60,7 @@ public class Loggr {
 	 * @param e
 	 */
 	public static void logMessage (String entry, Level logLevel, String className, String methodName, Object[] msg, Throwable e) {
+		date = new Date();
 		String fileName = "C:\\Users\\nandh\\git\\NandhaCloud\\logs\\" + className + ".txt";
 		try {
 		file = new File(fileName);
@@ -67,7 +70,7 @@ public class Loggr {
 		}
 		fileWriter = new FileWriter(file,true);
 		//TODO build JSON object & add info into it and then write the JSON to the file
-		fileWriter.write("{ "+"\"Level : \""+logLevel +"\", \"className\" : \""+ className +"\", \"Method Name\" : \""+methodName+"\", \"Point\" : \""+entry+ "\" }\n");
+		fileWriter.write("{ "+"\"Level : \""+logLevel +"\", \"className\" : \""+ className +"\", \"Method Name\" : \""+methodName+"\", \"Point\" : \""+entry+ "\", \"Date\": \""+ date + "\" }\n");
 		fileWriter.close();
 		}
 		catch (IOException ex) {
