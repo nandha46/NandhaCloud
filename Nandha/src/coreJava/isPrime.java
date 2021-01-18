@@ -31,5 +31,4 @@ public class isPrime {
 		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 		return true;
 	}
-
 }
