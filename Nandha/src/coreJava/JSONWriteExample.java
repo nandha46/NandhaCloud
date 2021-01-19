@@ -7,10 +7,20 @@ import java.io.PrintWriter;
 import java.util.LinkedHashMap; 
 import java.util.Map; 
 import org.json.simple.JSONArray; 
-import org.json.simple.JSONObject; 
+import org.json.simple.JSONObject;
+
+import com.fasterxml.jackson.databind.ObjectMapper; 
 
 public class JSONWriteExample 
 { 
+	private int id = 10;
+	private String name = "Jack";
+	
+	ObjectMapper mapper = new ObjectMapper();
+	JSONWriteExample jwe = new JSONWriteExample();
+	String json = mapper.writeValueAsString(jwe);
+	
+	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) throws FileNotFoundException 
 	{ 
