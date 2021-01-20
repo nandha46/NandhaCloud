@@ -1,0 +1,6 @@
+{ "Level : "INFO", "className" : "coreJava.Api", "Method Name" : "main", "Point" : "main", "Date": "Wed Jan 20 09:06:15 IST 2021" }
+{ "Level : "SEVERE", "className" : "coreJava.Api", "Method Name" : "main", "Point" : "Catch", "Date": "Wed Jan 20 09:06:15 IST 2021" }
+{ "Level : "INFO", "className" : "coreJava.Api", "Method Name" : "main", "Point" : "main", "Date": "Wed Jan 20 09:09:31 IST 2021", "Exception" : "null" }
+{ "Level : "SEVERE", "className" : "coreJava.Api", "Method Name" : "main", "Point" : "Catch", "Date": "Wed Jan 20 09:09:31 IST 2021", "Exception" : "com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class coreJava.Api and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)" }
+{ "Level : "INFO", "className" : "coreJava.Api", "Method Name" : "main", "Point" : "main", "Date": "Wed Jan 20 09:21:21 IST 2021", "Exception" : "null" }
+{ "Level : "SEVERE", "className" : "coreJava.Api", "Method Name" : "main", "Point" : "Catch", "Date": "Wed Jan 20 09:21:21 IST 2021", "Exception" : "com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class coreJava.Api and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)" }

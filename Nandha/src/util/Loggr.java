@@ -70,7 +70,7 @@ public class Loggr {
 		}
 		fileWriter = new FileWriter(file,true);
 		//TODO build JSON object & add info into it and then write the JSON to the file
-		fileWriter.write("{ "+"\"Level : \""+logLevel +"\", \"className\" : \""+ className +"\", \"Method Name\" : \""+methodName+"\", \"Point\" : \""+entry+ "\", \"Date\": \""+ date + "\" }\n");
+		fileWriter.write("{ "+"\"Level : \""+logLevel +"\", \"className\" : \""+ className +"\", \"Method Name\" : \""+methodName+"\", \"Point\" : \""+entry+ "\", \"Date\": \""+ date +"\", \"Exception\" : \""+e+ "\" }\n");
 		fileWriter.close();
 		}
 		catch (IOException ex) {
