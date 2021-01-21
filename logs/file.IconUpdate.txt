@@ -1,6 +1,0 @@
-{ "className" : "file.IconUpdate", "Point" : "Entry" }
-{ "className" : "file.IconUpdate", "Point" : "Exit" }
-{ "className" : "file.IconUpdate", "Point" : "Entry" }
-{ "className" : "file.IconUpdate", "Point" : "Exit" }
-{ "Level : "INFO", "className" : "file.IconUpdate", "Method Name" : "listFolder", "Point" : "Entry" }
-{ "Level : "INFO", "className" : "file.IconUpdate", "Method Name" : "listFolder", "Point" : "Exit" }
