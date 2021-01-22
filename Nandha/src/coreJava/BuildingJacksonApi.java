@@ -18,27 +18,34 @@ import util.Loggr;
 
 public class BuildingJacksonApi {
 	private static final String CLASS_NAME = BuildingJacksonApi.class.getName();
+
+	public JsonObject buildJson() {
+		final String methodName = "buildJson";
+		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
+		// Creating Company object to invoke company attributes getters
+				Company c = new Company();
+				// Creating JsonObjectBuilders for company,address,phone number array objects
+				JsonObjectBuilder companyBuilder = Json.createObjectBuilder();
+				JsonObjectBuilder addressBuilder = Json.createObjectBuilder();
+				JsonArrayBuilder phoneBuilder = Json.createArrayBuilder();
+				// using add method to set value to object builder
+				Address address = new Address();
+				addressBuilder = addressBuilder.add("doorNo",address.getDoorNo()).add("streetAddress", address.getStreetAddress()).add("city", address.getCity())
+						.add("state", address.getState()).add("country", address.getCountry());
+				for (long phone : c.getPhoneNumbers()) {
+					phoneBuilder.add(phone);
+				}
+				companyBuilder = companyBuilder.add("id",c.getId()).add("name", c.getName()).add("address", addressBuilder.build()).add("phoneNumbers", phoneBuilder.build());
+				// building json object
+				JsonObject jo = companyBuilder.build();
+				Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
+				return jo;
+	}
 	
 	public static void main(String[] args) {
-		final String methodName = "main";
-		Loggr.logMessage("start", Level.INFO, CLASS_NAME, methodName, args);
-		// Creating Company object to invoke company attributes getters
-		Company c = new Company();
-		// Creating JsonObjectBuilders for company,address,phone number array objects
-		JsonObjectBuilder companyBuilder = Json.createObjectBuilder();
-		JsonObjectBuilder addressBuilder = Json.createObjectBuilder();
-		JsonArrayBuilder phoneBuilder = Json.createArrayBuilder();
-		// using add method to set value to object builder
-		Address address = new Address();
-		addressBuilder = addressBuilder.add("doorNo",address.getDoorNo()).add("streetAddress", address.getStreetAddress()).add("city", address.getCity())
-				.add("state", address.getState()).add("country", address.getCountry());
-		for (long phone : c.getPhoneNumbers()) {
-			phoneBuilder.add(phone);
-		}
-		companyBuilder = companyBuilder.add("id",c.getId()).add("name", c.getName()).add("address", addressBuilder.build()).add("phoneNumbers", phoneBuilder.build());
-		// building json object
-		JsonObject api = companyBuilder.build();
-		System.out.println(api);
+		BuildingJacksonApi b = new BuildingJacksonApi();
+		JsonObject json = b.buildJson();
+		System.out.println(json);
 	}
 }
 
