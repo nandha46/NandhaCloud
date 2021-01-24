@@ -1,1 +1,3 @@
 { "Level : "INFO", "className" : "coreJava.BuildingJacksonApi", "Method Name" : "main", "Point" : "start", "Date": "Thu Jan 21 17:43:13 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "coreJava.BuildingJacksonApi", "Method Name" : "buildJson", "Point" : "Entry", "Date": "Sun Jan 24 09:32:06 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "coreJava.BuildingJacksonApi", "Method Name" : "buildJson", "Point" : "Exit", "Date": "Sun Jan 24 09:32:06 IST 2021", "Exception" : "null" }
