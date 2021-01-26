@@ -16,7 +16,7 @@ public class ParseJackson {
 	private static final String CLASS_NAME = ParseJackson.class.getName();
 	
 	
-	void parse (String json){
+	private void parse (String json){
 		final String methodName = "parse";
 		Company comp = null;
 		ObjectMapper mapper = new ObjectMapper();
