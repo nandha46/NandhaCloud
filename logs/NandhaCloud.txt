@@ -1,3 +1,5 @@
 { "Level : "INFO", "className" : "coreJava.BuildingJacksonApi", "Method Name" : "main", "Point" : "start", "Date": "Thu Jan 21 17:43:13 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "coreJava.BuildingJacksonApi", "Method Name" : "buildJson", "Point" : "Entry", "Date": "Sun Jan 24 09:32:06 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "coreJava.BuildingJacksonApi", "Method Name" : "buildJson", "Point" : "Exit", "Date": "Sun Jan 24 09:32:06 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "coreJava.UrlExample", "Method Name" : "main", "Point" : "Entry", "Date": "Fri Jan 29 10:23:52 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "coreJava.UrlExample", "Method Name" : "main", "Point" : "Exit", "Date": "Fri Jan 29 10:23:53 IST 2021", "Exception" : "null" }
