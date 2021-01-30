@@ -30,5 +30,4 @@ public class UrlExample {
 		}
 		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, args);
 	}
-
 }
