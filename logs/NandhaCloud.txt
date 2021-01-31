@@ -7,3 +7,10 @@
 { "Level : "INFO", "className" : "Leetcode.TruckMax", "Method Name" : "maximumUnits", "Point" : "Entry", "Date": "Sat Jan 30 10:28:54 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "Leetcode.TruckMax", "Method Name" : "maximumUnits", "Point" : "Exit", "Date": "Sat Jan 30 10:28:54 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "Leetcode.TruckMax", "Method Name" : "main", "Point" : "Exit", "Date": "Sat Jan 30 10:28:54 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "main", "Point" : "Entry", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.start", "Point" : "Entry", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.start", "Point" : "Entry", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Entry", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Entry", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Exit", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Exit", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
