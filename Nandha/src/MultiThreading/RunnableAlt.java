@@ -11,6 +11,7 @@ import util.Loggr;
 public class RunnableAlt implements Runnable {
 	private static final String CLASS_NAME = RunnableAlt.class.getName();
 	private Thread t;
+	@Override
 	public void  run() {
 		final String methodName = "RunnableAlt.run";
 		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
