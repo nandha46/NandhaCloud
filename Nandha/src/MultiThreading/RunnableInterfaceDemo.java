@@ -1,8 +1,21 @@
 package MultiThreading;
-class RunnableWorker implements Runnable{
 
+import java.util.logging.Level;
+
+import util.Loggr;
+
+/**
+ * 
+ * @author Nandhakumar Subramanian
+ *
+ */
+class RunnableWorker implements Runnable{
+	private static final String CLASS_NAME = RunnableWorker.class.getName();
+	
 	@Override
 	public void run() {
+		final String methodName = "run";
+		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
 		for (int i = 0; i <= 4; i++) {
 			System.out.println(Thread.currentThread().getName() + ": " + i);			
 
