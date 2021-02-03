@@ -14,3 +14,4 @@
 { "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Entry", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Exit", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "MultiThreading.RunnableAlt", "Method Name" : "RunnableAlt.run", "Point" : "Exit", "Date": "Sun Jan 31 08:33:12 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "MultiThreading.RunnableWorker", "Method Name" : "run", "Point" : "Entry", "Date": "Wed Feb 03 10:37:41 IST 2021", "Exception" : "null" }
