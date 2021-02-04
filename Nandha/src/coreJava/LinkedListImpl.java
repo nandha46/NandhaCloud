@@ -1,10 +1,11 @@
 package coreJava;
+
 /**
  * 
  * @author Nandhakumar Subramanian
  *
  */
-public class LinkedList {
+public class LinkedListImpl {
 	Node head;
 
 class Node {
@@ -17,7 +18,7 @@ class Node {
 
 }
 
-public static LinkedList insert (LinkedList list, int data){
+public static LinkedListImpl insert (LinkedListImpl list, int data){
 	Node new_node = list.new Node(data);
 	if (list.head==null){
 		list.head = new_node;
@@ -30,7 +31,7 @@ public static LinkedList insert (LinkedList list, int data){
 	}
 	return list;
 	}
-public static void printList(LinkedList list){
+public static void printList(LinkedListImpl list){
 	Node currNode = list.head;
 	System.out.println("LinkedList: ");
 	while(currNode!=null){
@@ -41,7 +42,7 @@ public static void printList(LinkedList list){
    }
 
 public static void main(String[] args){
-	LinkedList list = new LinkedList();
+	LinkedListImpl list = new LinkedListImpl();
 	list = insert(list,12);
 	list =insert(list,20);
 	list =insert(list,25);
