@@ -61,6 +61,7 @@ class Company {
 		phoneNumbers = new long[5];
 		phoneNumbers[0] = 4582565l;
 		phoneNumbers[1] = 1549998l;
+		@SuppressWarnings("unused")
 		Address addr = new Address();
 	}
 

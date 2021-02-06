@@ -23,6 +23,7 @@ public class Loggr {
 	
 	public static final String METHOD_ENTRY = "Entry";
 	public static final String METHOD_EXIT = "Exit";
+	@SuppressWarnings("unused")
 	private static final String CLASS_NAME = Loggr.class.getName();
 	private static FileWriter fileWriter;
 	private static File file;
