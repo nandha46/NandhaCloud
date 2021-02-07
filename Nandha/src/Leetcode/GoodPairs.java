@@ -1,7 +1,5 @@
 package Leetcode;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Level;
 
 import util.Loggr;
@@ -47,17 +45,15 @@ public class GoodPairs {
 	int numIdenticalPairs(int[] nums) {
 		final String methodName = "numIdenticalPairs";
 		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
-		Map<Integer,Integer> answer = new HashMap<>();
-		for (int i = 0; i <nums.length; i++) {
-			for(int j = 0; j < nums.length; j++) {
-				if (nums[i] == nums[j] && i < j) {
-					answer.put(i,j); //TODO find a way to add duplicate keys
-			}
+		int answer = 0 ;
+		for (int i = 0; i < nums.length; i++) {
+			for(int j = i+1; j < nums.length; j++) {
+				if (nums[i] == nums[j] && i < j) 
+					answer++;
 		}
 			}
 		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
-		System.out.println(answer.toString());
-		return answer.size();
+		return answer;
 	}
 	
 	public static void main(String[] args) {

@@ -1,17 +1,16 @@
 package coreJava;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 
  * @author Nandhakumar Subramanian
  *
  */
 public class Try {
-	private int value;
-	
 	public static void main(String[] args) {
-		Try t = new Try();
-		t.value = 14;
-		
-		System.out.println(t.value);
-	}
+		Map<Integer,Integer> m = new HashMap<>();
+		m.getOrDefault(1, 5);
+ 	}
 }
