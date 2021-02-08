@@ -76,3 +76,5 @@
 { "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Exit", "Date": "Sun Feb 07 08:52:32 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Entry", "Date": "Sun Feb 07 08:52:50 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Exit", "Date": "Sun Feb 07 08:52:50 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Entry", "Date": "Sun Feb 07 08:59:05 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Exit", "Date": "Sun Feb 07 08:59:05 IST 2021", "Exception" : "null" }
