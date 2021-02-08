@@ -32,12 +32,14 @@ Output: [3,4,6,16,17]
 
 public class RunningSum {
 	int[] runningSum(int[] nums) {
-		
-		return new int[0];    
+ 		for (int i = 1; i < nums.length; i++) {
+			nums[i] = nums[i-1] + nums[i];
+		}
+		return nums;    
     }
 	
 	public static void main(String[] args) {
-		int[] q = {1,2,3,4};
+		int[] q = {3,1,2,10,1};
 		RunningSum rs = new RunningSum();
 		q = rs.runningSum(q);
 		System.out.println(Arrays.toString(q));
