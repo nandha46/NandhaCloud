@@ -1,6 +1,8 @@
 package Leetcode;
 
 import java.util.Arrays;
+import java.util.logging.Level;
+import util.Loggr;
 
 /**
  * Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).
@@ -31,10 +33,15 @@ Output: [3,4,6,16,17]
 
 
 public class RunningSum {
+	private static final String CLASS_NAME = RunningSum.class.getName();
+	
 	int[] runningSum(int[] nums) {
+		final String methodName = "runningSum";
+		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
  		for (int i = 1; i < nums.length; i++) {
 			nums[i] = nums[i-1] + nums[i];
 		}
+ 		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 		return nums;    
     }
 	

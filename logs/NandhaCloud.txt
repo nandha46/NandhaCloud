@@ -78,3 +78,8 @@
 { "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Exit", "Date": "Sun Feb 07 08:52:50 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Entry", "Date": "Sun Feb 07 08:59:05 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "Leetcode.GoodPairs", "Method Name" : "numIdenticalPairs", "Point" : "Exit", "Date": "Sun Feb 07 08:59:05 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.KidsWithCandies", "Method Name" : "kidsWithCandies", "Point" : "Entry", "Date": "Tue Feb 09 12:38:10 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.KidsWithCandies", "Method Name" : "kidsWithCandies", "Point" : "Exit", "Date": "Tue Feb 09 12:38:10 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.RunningSum", "Method Name" : "runningSum", "Point" : "Entry", "Date": "Tue Feb 09 12:38:16 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.RunningSum", "Method Name" : "runningSum", "Point" : "Exit", "Date": "Tue Feb 09 12:38:16 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "Leetcode.DefangingIP", "Method Name" : "defangingIp", "Point" : "Entry", "Date": "Tue Feb 09 12:51:39 IST 2021", "Exception" : "null" }
