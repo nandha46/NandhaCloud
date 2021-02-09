@@ -62,7 +62,7 @@ public class Loggr {
 	 */
 	public static void logMessage (String entry, Level logLevel, String className, String methodName, Object[] msg, Throwable e) {
 		date = new Date();
-		String fileName = "C:\\Users\\nandh\\git\\NandhaCloud\\logs\\NandhaCloud.txt";
+		String fileName = "C:\\Users\\nandh\\git\\NandhaCloud\\logs\\NandhaCloud.log";
 		try {
 		file = new File(fileName);
 		if (!file.exists()) {

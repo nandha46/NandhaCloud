@@ -1,4 +1,4 @@
-package Leetcode;
+package leetcode;
 /**
  * @author Nandhakumar Subramanian
  */
