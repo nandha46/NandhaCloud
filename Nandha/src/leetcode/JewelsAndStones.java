@@ -1,4 +1,8 @@
 package leetcode;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * <pre>
  * You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have. Each character in stones is a type of stone you have. You want to know how many of the stones you have are also jewels.
@@ -25,13 +29,13 @@ Output: 0
 public class JewelsAndStones {
 	 int numJewelsInStones(String jewels, String stones) {
 		 int ans = 0;
-		 char[] jewelArray = jewels.toCharArray();
-		 char[] stoneArray = stones.toCharArray();
-		 for (char a : jewelArray) {
-			 for (char b : stoneArray) {
-				 if (a == b )
-					 ans++;
-			 }
+		 Set<Character> set = new HashSet<Character>();
+		 for (char a : jewels.toCharArray()) {
+			set.add(a); 
+		 }
+		 for (char a : stones.toCharArray()) {
+			 if (set.contains(a))
+				 ans++;
 		 }
 		 return ans;
 	    }
