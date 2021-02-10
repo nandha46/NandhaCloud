@@ -1,4 +1,5 @@
 package leetcode;
+
 /**
  * <pre>
  * Design a parking system for a parking lot. The parking lot has three kinds of parking spaces: big, medium, and small, with a fixed number of slots for each size.
@@ -23,23 +24,47 @@ parkingSystem.addCar(1); // return true because there is 1 available slot for a 
 parkingSystem.addCar(2); // return true because there is 1 available slot for a medium car
 parkingSystem.addCar(3); // return false because there is no available slot for a small car
 parkingSystem.addCar(1); // return false because there is no available slot for a big car. It is already occupied.
-
+ * 
  * </pre>
  * 
  * @author nandh
  *
  */
 public class DesignParkingSystem {
+	int big, medium, small;
+
 	DesignParkingSystem(int big, int medium, int small) {
-        
-    }
-    
-    boolean addCar(int carType) {
-    return true;    
-    }
-	
+		this.big = big;
+		this.medium = medium;
+		this.small = small;
+	}
+
+	boolean addCar(int carType) {
+		boolean flag = true;
+		switch (carType) {
+		case 1:
+			if (--big < 0) {
+				flag = false;}
+			break;
+		case 2:
+			if (--medium < 0) {
+				flag = false;}
+			break;
+		case 3:
+			if (--small < 0) {
+				flag = false;}
+			break;
+		}
+		return flag;
+	}
+
 	public static void main(String[] args) {
-		int[][] input = {{1, 1, 0}, {1}, {2}, {3}, {1}};
+		// int[][] input = {{1, 1, 0}, {1}, {2}, {3}, {1}};
+		DesignParkingSystem obj = new DesignParkingSystem(1, 1, 0);
+		System.out.println(obj.addCar(1));
+		System.out.println(obj.addCar(2));
+		System.out.println(obj.addCar(3));
+		System.out.println(obj.addCar(1));
 	}
 
 }
