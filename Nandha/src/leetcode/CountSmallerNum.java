@@ -31,7 +31,7 @@ Output: [0,0,0,0]
 
  * </pre>
  * 
- * @author nandh
+ * @author Nandhakumar Subramanian
  *
  */
 public class CountSmallerNum {
