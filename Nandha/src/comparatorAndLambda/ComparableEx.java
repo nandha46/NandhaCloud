@@ -3,10 +3,16 @@ package comparatorAndLambda;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Level;
+
+import util.Loggr;
 
 public class ComparableEx {
-
+	private static final String CLASS_NAME = ComparableEx.class.getName();
+	
 	public static void main (String[] args) {
+		final String methodName = "main";
+		Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
 		Employee e1 = new Employee(1,"adam",18,5.5d);
 		Employee e2 = new Employee(0,"berd",16,2.4d);
 		Employee e3 = new Employee(2,"cate",17,3.5d);

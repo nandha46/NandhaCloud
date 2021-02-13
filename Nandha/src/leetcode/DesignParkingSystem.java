@@ -1,5 +1,9 @@
 package leetcode;
 
+import java.util.logging.Level;
+
+import util.Loggr;
+
 /**
  * <pre>
  * Design a parking system for a parking lot. The parking lot has three kinds of parking spaces: big, medium, and small, with a fixed number of slots for each size.
@@ -31,6 +35,7 @@ parkingSystem.addCar(1); // return false because there is no available slot for 
  *
  */
 public class DesignParkingSystem {
+	private static final String CLASS_NAME = DesignParkingSystem.class.getName();
 	int big, medium, small;
 
 	DesignParkingSystem(int big, int medium, int small) {
@@ -40,6 +45,8 @@ public class DesignParkingSystem {
 	}
 
 	boolean addCar(int carType) {
+		final String methodName = "addCar";
+		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 		boolean flag = true;
 		switch (carType) {
 		case 1:
@@ -55,6 +62,7 @@ public class DesignParkingSystem {
 				flag = false;}
 			break;
 		}
+		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 		return flag;
 	}
 

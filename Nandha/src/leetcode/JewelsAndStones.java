@@ -2,6 +2,9 @@ package leetcode;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.logging.Level;
+
+import util.Loggr;
 
 /**
  * <pre>
@@ -27,7 +30,11 @@ Output: 0
  *
  */
 public class JewelsAndStones {
+	private static final String CLASS_NAME = JewelsAndStones.class.getName();
+	
 	 int numJewelsInStones(String jewels, String stones) {
+		 final String methodName = "numJewelsInStones";
+		 Loggr.logMessage(Loggr.METHOD_ENTRY, Level.INFO, CLASS_NAME, methodName, null);
 		 int ans = 0;
 		 Set<Character> set = new HashSet<Character>();
 		 for (char a : jewels.toCharArray()) {
@@ -37,6 +44,7 @@ public class JewelsAndStones {
 			 if (set.contains(a))
 				 ans++;
 		 }
+		 Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 		 return ans;
 	    }
 	public static void main(String[] args) {
