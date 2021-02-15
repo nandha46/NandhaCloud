@@ -2,6 +2,7 @@ package comparatorAndLambda;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.logging.Level;
 
@@ -29,6 +30,10 @@ public class ComparableEx {
 		// Comparator implemented version of Salary sorter
 		EmployeeSalarySorter employeeSalarySorter = new EmployeeSalarySorter();
 		Collections.sort(list,employeeSalarySorter);
+		Comparator<Employee> c = Comparator.comparing(Employee::getAge);  
+		Collections.sort(list,c);
+		Comparator<Employee> cs = Comparator.comparing(Employee::getSalary);  
+		Collections.sort(list,cs);
 		System.out.println(list.toString());
 	}
 }
