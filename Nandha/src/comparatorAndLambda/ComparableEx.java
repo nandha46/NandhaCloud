@@ -7,7 +7,11 @@ import java.util.List;
 import java.util.logging.Level;
 
 import util.Loggr;
-
+/**
+ * 
+ * @author Nandhakumar Subramanian
+ *
+ */
 public class ComparableEx {
 	private static final String CLASS_NAME = ComparableEx.class.getName();
 	
@@ -32,8 +36,9 @@ public class ComparableEx {
 		Collections.sort(list,employeeSalarySorter);
 		Comparator<Employee> c = Comparator.comparing(Employee::getAge);  
 		Collections.sort(list,c);
-		Comparator<Employee> cs = Comparator.comparing(Employee::getSalary);  
+		Comparator<Employee> cs = Comparator.comparingDouble(Employee::getSalary);  
 		Collections.sort(list,cs);
 		System.out.println(list.toString());
+		Loggr.logMessage(Loggr.METHOD_EXIT, Level.INFO, CLASS_NAME, methodName, null);
 	}
 }
