@@ -4,7 +4,7 @@ import java.time.Duration;
 import java.time.Instant;
 /**
  * 
- * @author Nandha
+ * @author Nandhakumar Subramanian
  *
  */
 public class MeasurePerformance {
