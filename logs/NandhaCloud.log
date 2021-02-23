@@ -150,3 +150,7 @@
 { "Level : "INFO", "className" : "comparatorAndLambda.Employee", "Method Name" : "toString", "Point" : "Entry", "Date": "Wed Feb 17 10:42:00 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "comparatorAndLambda.Employee", "Method Name" : "toString", "Point" : "Entry", "Date": "Wed Feb 17 10:42:00 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "comparatorAndLambda.ComparableEx", "Method Name" : "main", "Point" : "Exit", "Date": "Wed Feb 17 10:42:00 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Entry", "Date": "Tue Feb 23 09:57:57 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Exit", "Date": "Tue Feb 23 09:57:57 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Entry", "Date": "Tue Feb 23 09:57:57 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Exit", "Date": "Tue Feb 23 09:57:58 IST 2021", "Exception" : "null" }
