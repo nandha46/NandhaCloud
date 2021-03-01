@@ -153,3 +153,9 @@
 { "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Exit", "Date": "Tue Feb 23 09:57:57 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Entry", "Date": "Tue Feb 23 09:57:57 IST 2021", "Exception" : "null" }
 { "Level : "INFO", "className" : "time.MeasurePerformance", "Method Name" : "someMethod", "Point" : "Exit", "Date": "Tue Feb 23 09:57:58 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "leetcode.CountSmallerNum", "Method Name" : "smallerNumbersThanCurrent", "Point" : "Entry", "Date": "Sun Feb 28 14:18:18 IST 2021", "Exception" : "null" }
+{ "Level : "INFO", "className" : "leetcode.CountSmallerNum", "Method Name" : "smallerNumbersThanCurrent", "Point" : "Exit", "Date": "Sun Feb 28 14:18:18 IST 2021", "Exception" : "null" }
+{ "Level : "SEVERE", "className" : "file.CsvSplitter", "Method Name" : "main", "Point" : "Error", "Date": "Sun Feb 28 14:21:40 IST 2021", "Exception" : "java.io.FileNotFoundException: \home\local\ZOHOCORP\nandha-con426\Documents\Investing URL\urlsAll.html (The system cannot find the path specified)" }
+{ "Level : "SEVERE", "className" : "file.CsvSplitter", "Method Name" : "split", "Point" : "Entry", "Date": "Sun Feb 28 14:21:40 IST 2021", "Exception" : "null" }
+{ "Level : "SEVERE", "className" : "file.CsvSplitter", "Method Name" : "split", "Point" : "Error", "Date": "Sun Feb 28 14:21:40 IST 2021", "Exception" : "java.io.FileNotFoundException: \home\local\ZOHOCORP\nandha-con426\Documents\Investing URL\urls\page_0.html (The system cannot find the path specified)" }
+{ "Level : "SEVERE", "className" : "file.CsvSplitter", "Method Name" : "split", "Point" : "Exit", "Date": "Sun Feb 28 14:21:40 IST 2021", "Exception" : "null" }

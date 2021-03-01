@@ -52,7 +52,7 @@ public class Loggr {
 	//TODO Remove entry and include it to Object
 	//TODO add getMessage method 
 	/**
-	 * This method initiates a File Writer for each class it logs, and writes log message in JSON format. 
+	 * This method checks if log file exists and creates if not, then writes log message in JSON format. 
 	 * 
 	 * @param entry
 	 * @param logLevel

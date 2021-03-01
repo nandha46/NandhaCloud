@@ -35,16 +35,24 @@ public class CsvSplitter {
 		reader.close();
 		}
 		catch (IOException e) {
-			e.printStackTrace();
 			Loggr.logMessage(Loggr.ERROR, Level.SEVERE, CLASS_NAME, methodName, null, e);
+			e.printStackTrace();
 		}
 		Loggr.logMessage(Loggr.METHOD_EXIT, Level.SEVERE, CLASS_NAME, methodName, null);
 	}
 	
-	public static void main(String[] args) throws IOException,FileNotFoundException {
+	public static void main(String[] args) {
+		final String methodName = "main";
 		//File file =new File("/home/local/ZOHOCORP/nandha-con426/Documents/Investing URL/urlsAll.html");
 		String fname = "/home/local/ZOHOCORP/nandha-con426/Documents/Investing URL/urlsAll.html";
-		BufferedReader reader = new BufferedReader(new FileReader(fname));
+		BufferedReader reader = null;
+		try {
+		 reader = new BufferedReader(new FileReader(fname));
+		} 
+		catch (FileNotFoundException e) {
+			e.printStackTrace();
+			Loggr.logMessage(Loggr.ERROR, Level.SEVERE, CLASS_NAME, methodName, null, e);
+		}
 		CsvSplitter splitter = new CsvSplitter();
 		splitter.split(fname, reader);
 	}
