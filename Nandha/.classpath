@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="C:/Users/nandh/Downloads/Java/Jar/Jackson json/jackson-annotations-2.11.1.jar" sourcepath="C:/Users/nandh/Downloads/Java/Jar/Jackson json/jackson-annotations-2.11.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nandh/Downloads/Java/Jar/Jackson json/jackson-core-2.11.1.jar" sourcepath="C:/Users/nandh/Downloads/Java/Jar/Jackson json/jackson-core-2.11.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nandh/Downloads/Java/Jar/javax.json-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nandh/Downloads/Java/Jar/ICU4J/icu4j-65.1.jar" sourcepath="C:/Users/nandh/Downloads/Java/Jar/ICU4J/icu4j-65.1-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
