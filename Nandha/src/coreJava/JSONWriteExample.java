@@ -1,4 +1,4 @@
-package coreJava;
+package corejava;
 
 //Java program to write JSON to a file 
 
