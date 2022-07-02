@@ -1,4 +1,4 @@
-package coreJava;
+package corejava;
 /**
  * @author Nandhakumar Subramanian
  * 
